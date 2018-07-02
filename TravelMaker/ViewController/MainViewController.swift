@@ -1,40 +1,19 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  TravelMaker
 //
-//  Created by 이충신 on 2018. 7. 1..
+//  Created by 이충신 on 2018. 7. 2..
 //  Copyright © 2018년 GGOMMI. All rights reserved.
 //
-
 
 import UIKit
 import Alamofire
 import NaverThirdPartyLogin
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+
     //MARK: IBOutlet
     @IBOutlet weak var loginBtn: UIButton!
-    @IBOutlet weak var logoutBtn: UIButton! {
-        didSet{
-            logoutBtn.isHidden = true
-        }
-    }
-    
-    @IBOutlet weak var emailLabel: UILabel! {
-        didSet{
-            emailLabel.text = nil
-        }
-    }
-    @IBOutlet weak var nameLabel: UILabel! {
-        didSet{
-            nameLabel.text = nil
-        }
-    }
-    @IBOutlet weak var birthLabel: UILabel! {
-        didSet{
-            birthLabel.text = nil
-        }
-    }
     
     
     //MARK: Properties
@@ -48,59 +27,55 @@ class ViewController: UIViewController {
     
     
     //MARK: IBAction
-    
-    // ----- 1 :delegate를 지정 및 인증 요청. 네이버 앱이나 사파리를 통해 인증이 진행됩니다.
-    @IBAction func handleLogin(_ sender: Any) {
-        loginInstance?.delegate = self
+    // ----- 1 : Delegate를 지정 및 인증 요청. 네이버 앱이나 사파리를 통해 인증이 진행.
+    @IBAction func  loginPressed(_ sender: Any) {
+        loginInstance?.delegate = self;
         loginInstance?.requestThirdPartyLogin()
     }
-
-    @IBAction func handleLogout(_ sender: Any) { // ----- 2
-        //loginConn?.resetToken() // 로그아웃
-        loginInstance?.requestDeleteToken() // 연동해제
-        logoutBtn.isHidden = true
-        loginBtn.isHidden = false
-    }
+    
 }
 
-extension ViewController: NaverThirdPartyLoginConnectionDelegate{
+extension MainViewController: NaverThirdPartyLoginConnectionDelegate{
     
     
-    // ---- 3 네이버 앱이 설치되어 있지 않다면 사파리를 통해 인증 진행 화면을 띄우는 코드입니다
+    // ---- 2: 네이버 앱이 설치되어 있지 않다면 사파리로 인증
     func oauth20ConnectionDidOpenInAppBrowser(forOAuth request: URLRequest!) {
         let naverSignInViewController = NLoginThirdPartyOAuth20InAppBrowserViewController(request: request)!
         present(naverSignInViewController, animated: true, completion: nil)
     }
-    // ---- 4
+    
+    // ---- 3 : 접근 토큰을 성공적으로 받아왔을 때 호출되는 메소드
+    // 발급 받은 토큰의 유효 기간은 1시간으로 isValidAccessTokenExpireTimeNow() 메소드를 통해 현재 갖고 있는 접근 토큰의 유효 기간이 만료되었는지를 판단할 수 있습니다.
     func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
         print("Success oauth20ConnectionDidFinishRequestACTokenWithAuthCode")
         getNaverEmailFromURL()
-        logoutBtn.isHidden = false
-        loginBtn.isHidden = true
+        /////처음가입시 사용되는 메소드 -> 여행타입뷰로/////
+
     }
-    // ---- 5
+    
+    // ---- 4: 갱신 토큰을 성공적으로 받아왔을 때 호출되는 메소드
     func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
         print("Success oauth20ConnectionDidFinishRequestACTokenWithRefreshToken")
         getNaverEmailFromURL()
-        logoutBtn.isHidden = false
-        loginBtn.isHidden = true
+        ////// 로그인 후 1시간동안 유효하기 때문에 ->바로 메인뷰/////
+        
     }
     
     
-    // ---- 6  연동이 성공적을 해제되었을 때 호출되는 메소드입니다.
+    // ---- 5:  연동이 성공적으로 해제되었을 때 호출되는 메소드입니다.
     func oauth20ConnectionDidFinishDeleteToken() {
         
     }
     
     
-    // ---- 7
+    // ---- 6:
     func oauth20Connection(_ oauthConnection: NaverThirdPartyLoginConnection!, didFailWithError error: Error!) {
         print(error.localizedDescription)
         print(error)
     }
     
     
-    // ---- 8
+    // ---- 7:
     func getNaverEmailFromURL(){
         
         guard let loginConn = NaverThirdPartyLoginConnection.getSharedInstance() else {return}
@@ -108,18 +83,19 @@ extension ViewController: NaverThirdPartyLoginConnectionDelegate{
         guard let accessToken = loginConn.accessToken else {return}
         
         let authorization = "\(tokenType) \(accessToken)"
+        
         Alamofire.request("https://openapi.naver.com/v1/nid/me", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization" : authorization]).responseJSON { (response) in
+            
             guard let result = response.result.value as? [String: Any] else {return}
             guard let object = result["response"] as? [String: Any] else {return}
-            guard let birthday = object["birthday"] as? String else {return}
-            guard let name = object["name"] as? String else {return}
-            guard let email = object["email"] as? String else {return}
             
-            self.birthLabel.text = birthday
-            self.emailLabel.text = email
-            self.nameLabel.text = name
+            
+            //guard let birthday = object["birthday"] as? String else {return} // "11-25"
+            //guard let name = object["name"] as? String else {return} // "\Uc774\Ucda9\Uc2e0"
+            //guard let age = object["age"] as? String else {return} // "20-29"
+            //guard let gender = object["gender"] as? String else {return} // "M"
+            
             print(result)
         }
     }
 }
-

@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503F541B20E9D50D00F85074 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F541A20E9D50D00F85074 /* MainViewController.swift */; };
+		503F541D20E9FF0600F85074 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F541C20E9FF0600F85074 /* ToggleButton.swift */; };
+		503F541F20E9FFD300F85074 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F541E20E9FFD300F85074 /* JoinViewController.swift */; };
+		503F542420EA07E400F85074 /* Sub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503F542320EA07E400F85074 /* Sub.storyboard */; };
+		503F542620EA088100F85074 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542520EA088100F85074 /* HomeViewController.swift */; };
+		503F542820EA088C00F85074 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542720EA088C00F85074 /* FavoriteViewController.swift */; };
+		503F542A20EA0A4000F85074 /* ReceivePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542920EA0A4000F85074 /* ReceivePlanViewController.swift */; };
+		503F542C20EA0AC500F85074 /* SendPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542B20EA0AC500F85074 /* SendPlanViewController.swift */; };
+		503F542E20EA0B0700F85074 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542D20EA0B0700F85074 /* MyPageViewController.swift */; };
+		503F543120EA151400F85074 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F543020EA151400F85074 /* ExploreViewController.swift */; };
 		505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E418D20E8636600D769C9 /* AppDelegate.swift */; };
-		505E419020E8636600D769C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E418F20E8636600D769C9 /* ViewController.swift */; };
 		505E419320E8636600D769C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E419120E8636600D769C9 /* Main.storyboard */; };
 		505E419520E8636700D769C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E419420E8636700D769C9 /* Assets.xcassets */; };
 		505E419820E8636700D769C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E419620E8636700D769C9 /* LaunchScreen.storyboard */; };
@@ -18,9 +27,18 @@
 /* Begin PBXFileReference section */
 		1BDAEB0AF36657CC7A79C3A7 /* Pods-TravelMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaker/Pods-TravelMaker.release.xcconfig"; sourceTree = "<group>"; };
 		2600F68A9D0110ABCF8A06B2 /* Pods-TravelMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaker/Pods-TravelMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		503F541A20E9D50D00F85074 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		503F541C20E9FF0600F85074 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToggleButton.swift; path = UI/ToggleButton.swift; sourceTree = SOURCE_ROOT; };
+		503F541E20E9FFD300F85074 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		503F542320EA07E400F85074 /* Sub.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sub.storyboard; sourceTree = "<group>"; };
+		503F542520EA088100F85074 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		503F542720EA088C00F85074 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		503F542920EA0A4000F85074 /* ReceivePlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivePlanViewController.swift; sourceTree = "<group>"; };
+		503F542B20EA0AC500F85074 /* SendPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPlanViewController.swift; sourceTree = "<group>"; };
+		503F542D20EA0B0700F85074 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		503F543020EA151400F85074 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		505E418A20E8636600D769C9 /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505E418D20E8636600D769C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		505E418F20E8636600D769C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		505E419220E8636600D769C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		505E419420E8636700D769C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505E419720E8636700D769C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +78,10 @@
 		5007452220E8768D001394A7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				505E418F20E8636600D769C9 /* ViewController.swift */,
+				503F541A20E9D50D00F85074 /* MainViewController.swift */,
+				503F541E20E9FFD300F85074 /* JoinViewController.swift */,
+				503F543020EA151400F85074 /* ExploreViewController.swift */,
+				503F542F20EA127600F85074 /* Tabbar Controller */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -70,6 +91,7 @@
 			children = (
 				505E419120E8636600D769C9 /* Main.storyboard */,
 				505E419620E8636700D769C9 /* LaunchScreen.storyboard */,
+				503F542320EA07E400F85074 /* Sub.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -102,6 +124,7 @@
 		5007452720E876EA001394A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				503F541C20E9FF0600F85074 /* ToggleButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -111,6 +134,18 @@
 			children = (
 			);
 			path = Function;
+			sourceTree = "<group>";
+		};
+		503F542F20EA127600F85074 /* Tabbar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				503F542520EA088100F85074 /* HomeViewController.swift */,
+				503F542720EA088C00F85074 /* FavoriteViewController.swift */,
+				503F542920EA0A4000F85074 /* ReceivePlanViewController.swift */,
+				503F542B20EA0AC500F85074 /* SendPlanViewController.swift */,
+				503F542D20EA0B0700F85074 /* MyPageViewController.swift */,
+			);
+			path = "Tabbar Controller";
 			sourceTree = "<group>";
 		};
 		505E418120E8636600D769C9 = {
@@ -207,6 +242,7 @@
 				505E419820E8636700D769C9 /* LaunchScreen.storyboard in Resources */,
 				505E419520E8636700D769C9 /* Assets.xcassets in Resources */,
 				505E419320E8636600D769C9 /* Main.storyboard in Resources */,
+				503F542420EA07E400F85074 /* Sub.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505E419020E8636600D769C9 /* ViewController.swift in Sources */,
+				503F542A20EA0A4000F85074 /* ReceivePlanViewController.swift in Sources */,
+				503F542E20EA0B0700F85074 /* MyPageViewController.swift in Sources */,
+				503F543120EA151400F85074 /* ExploreViewController.swift in Sources */,
+				503F542620EA088100F85074 /* HomeViewController.swift in Sources */,
+				503F541B20E9D50D00F85074 /* MainViewController.swift in Sources */,
+				503F542C20EA0AC500F85074 /* SendPlanViewController.swift in Sources */,
+				503F541D20E9FF0600F85074 /* ToggleButton.swift in Sources */,
+				503F541F20E9FFD300F85074 /* JoinViewController.swift in Sources */,
+				503F542820EA088C00F85074 /* FavoriteViewController.swift in Sources */,
 				505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +451,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E3WW2RPPH;
 				INFOPLIST_FILE = TravelMaker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spot.TravelMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -423,7 +470,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E3WW2RPPH;
 				INFOPLIST_FILE = TravelMaker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.spot.TravelMaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
