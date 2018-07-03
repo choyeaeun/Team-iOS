@@ -11,6 +11,7 @@ import NaverThirdPartyLogin
 
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //네아로 로그인에 필요한 인스턴스
         let instance = NaverThirdPartyLoginConnection.getSharedInstance()
         instance?.isInAppOauthEnable = true // --- 1
         instance?.isNaverAppOauthEnable = true // --- 2

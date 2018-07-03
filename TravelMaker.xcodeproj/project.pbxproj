@@ -17,10 +17,18 @@
 		503F542C20EA0AC500F85074 /* SendPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542B20EA0AC500F85074 /* SendPlanViewController.swift */; };
 		503F542E20EA0B0700F85074 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542D20EA0B0700F85074 /* MyPageViewController.swift */; };
 		503F543120EA151400F85074 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F543020EA151400F85074 /* ExploreViewController.swift */; };
+		5051E97620EBD48700CFFB5C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E97520EBD48700CFFB5C /* HomeTableViewCell.swift */; };
+		5051E97920EBD52600CFFB5C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */; };
+		5051E97B20EBD71100CFFB5C /* HomeTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */; };
 		505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E418D20E8636600D769C9 /* AppDelegate.swift */; };
 		505E419320E8636600D769C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E419120E8636600D769C9 /* Main.storyboard */; };
 		505E419520E8636700D769C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E419420E8636700D769C9 /* Assets.xcassets */; };
 		505E419820E8636700D769C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E419620E8636700D769C9 /* LaunchScreen.storyboard */; };
+		50601F5020EA8982008C95DA /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */; };
+		50601F5120EA8982008C95DA /* NotoSansKR-Thin-Windows.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50601F4E20EA8980008C95DA /* NotoSansKR-Thin-Windows.otf */; };
+		50601F5220EA8982008C95DA /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50601F4F20EA8981008C95DA /* NotoSansKR-Medium.otf */; };
+		50E80A8020EB5C2B00B427A3 /* ExtensionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E80A7F20EB5C2B00B427A3 /* ExtensionControl.swift */; };
+		50E80A8220EB5FD600B427A3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E80A8120EB5FD600B427A3 /* APIService.swift */; };
 		70B5D3C850033F980F5B0A09 /* Pods_TravelMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAEC46EC447B3F7D2DACE37 /* Pods_TravelMaker.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,12 +45,20 @@
 		503F542B20EA0AC500F85074 /* SendPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPlanViewController.swift; sourceTree = "<group>"; };
 		503F542D20EA0B0700F85074 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		503F543020EA151400F85074 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		5051E97520EBD48700CFFB5C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderCell.swift; sourceTree = "<group>"; };
 		505E418A20E8636600D769C9 /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505E418D20E8636600D769C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505E419220E8636600D769C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		505E419420E8636700D769C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505E419720E8636700D769C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505E419920E8636700D769C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		50601F4E20EA8980008C95DA /* NotoSansKR-Thin-Windows.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin-Windows.otf"; sourceTree = "<group>"; };
+		50601F4F20EA8981008C95DA /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		50E80A7F20EB5C2B00B427A3 /* ExtensionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionControl.swift; path = Function/ExtensionControl.swift; sourceTree = SOURCE_ROOT; };
+		50E80A8120EB5FD600B427A3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Function/APIService.swift; sourceTree = SOURCE_ROOT; };
 		CCAEC46EC447B3F7D2DACE37 /* Pods_TravelMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				505E419120E8636600D769C9 /* Main.storyboard */,
-				505E419620E8636700D769C9 /* LaunchScreen.storyboard */,
 				503F542320EA07E400F85074 /* Sub.storyboard */,
+				505E419620E8636700D769C9 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 		5007452520E876D9001394A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				50E80A8120EB5FD600B427A3 /* APIService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,6 +149,7 @@
 		5007452820E876EF001394A7 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				50E80A7F20EB5C2B00B427A3 /* ExtensionControl.swift */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -139,13 +157,35 @@
 		503F542F20EA127600F85074 /* Tabbar Controller */ = {
 			isa = PBXGroup;
 			children = (
-				503F542520EA088100F85074 /* HomeViewController.swift */,
+				5051E97720EBD4CE00CFFB5C /* HomeTab */,
 				503F542720EA088C00F85074 /* FavoriteViewController.swift */,
 				503F542920EA0A4000F85074 /* ReceivePlanViewController.swift */,
 				503F542B20EA0AC500F85074 /* SendPlanViewController.swift */,
 				503F542D20EA0B0700F85074 /* MyPageViewController.swift */,
 			);
 			path = "Tabbar Controller";
+			sourceTree = "<group>";
+		};
+		503F543220EA4E4000F85074 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50601F4F20EA8981008C95DA /* NotoSansKR-Medium.otf */,
+				50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */,
+				50601F4E20EA8980008C95DA /* NotoSansKR-Thin-Windows.otf */,
+				505E419420E8636700D769C9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5051E97720EBD4CE00CFFB5C /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				503F542520EA088100F85074 /* HomeViewController.swift */,
+				5051E97520EBD48700CFFB5C /* HomeTableViewCell.swift */,
+				5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */,
+				5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */,
+			);
+			path = HomeTab;
 			sourceTree = "<group>";
 		};
 		505E418120E8636600D769C9 = {
@@ -170,10 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				505E418D20E8636600D769C9 /* AppDelegate.swift */,
+				5007452320E876A3001394A7 /* Storyboard */,
 				5007452220E8768D001394A7 /* ViewController */,
 				5007452420E876CC001394A7 /* Util */,
-				5007452320E876A3001394A7 /* Storyboard */,
-				505E419420E8636700D769C9 /* Assets.xcassets */,
+				503F543220EA4E4000F85074 /* Resources */,
 				505E419920E8636700D769C9 /* Info.plist */,
 			);
 			path = TravelMaker;
@@ -241,6 +281,9 @@
 			files = (
 				505E419820E8636700D769C9 /* LaunchScreen.storyboard in Resources */,
 				505E419520E8636700D769C9 /* Assets.xcassets in Resources */,
+				50601F5220EA8982008C95DA /* NotoSansKR-Medium.otf in Resources */,
+				50601F5120EA8982008C95DA /* NotoSansKR-Thin-Windows.otf in Resources */,
+				50601F5020EA8982008C95DA /* NotoSansKR-Regular.otf in Resources */,
 				505E419320E8636600D769C9 /* Main.storyboard in Resources */,
 				503F542420EA07E400F85074 /* Sub.storyboard in Resources */,
 			);
@@ -296,11 +339,16 @@
 			files = (
 				503F542A20EA0A4000F85074 /* ReceivePlanViewController.swift in Sources */,
 				503F542E20EA0B0700F85074 /* MyPageViewController.swift in Sources */,
+				5051E97620EBD48700CFFB5C /* HomeTableViewCell.swift in Sources */,
 				503F543120EA151400F85074 /* ExploreViewController.swift in Sources */,
 				503F542620EA088100F85074 /* HomeViewController.swift in Sources */,
 				503F541B20E9D50D00F85074 /* MainViewController.swift in Sources */,
 				503F542C20EA0AC500F85074 /* SendPlanViewController.swift in Sources */,
+				5051E97920EBD52600CFFB5C /* HomeCollectionViewCell.swift in Sources */,
+				5051E97B20EBD71100CFFB5C /* HomeTableViewHeaderCell.swift in Sources */,
 				503F541D20E9FF0600F85074 /* ToggleButton.swift in Sources */,
+				50E80A8020EB5C2B00B427A3 /* ExtensionControl.swift in Sources */,
+				50E80A8220EB5FD600B427A3 /* APIService.swift in Sources */,
 				503F541F20E9FFD300F85074 /* JoinViewController.swift in Sources */,
 				503F542820EA088C00F85074 /* FavoriteViewController.swift in Sources */,
 				505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */,

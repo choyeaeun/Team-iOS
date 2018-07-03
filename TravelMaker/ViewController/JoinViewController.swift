@@ -8,13 +8,45 @@
 
 import UIKit
 
-class JoinViewController: UIViewController {
+class JoinViewController: UIViewController, UITextFieldDelegate {
 
+    let userdefault = UserDefaults.standard
+    
+    @IBOutlet weak var nickNameTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        nickNameTextField.delegate = self;
 
     }
+    
+    
+    @IBAction func pressedJoinBtn(_ sender: Any) {
+            enterHome()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nickNameTextField {
+            enterHome()
+        }
+        return true
+    }
+    
+    func enterHome() {
+        
+        if nickNameTextField.text != "" {
+            
+            userdefault.set(gsno(nickNameTextField.text), forKey: "nickName")
+            
+            let boardVCNavi = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "boardVCNavi")
+            
+            self.present(boardVCNavi, animated: true, completion: nil)
+        }
+        
+    }
 
-  
+    
+    
 
 }

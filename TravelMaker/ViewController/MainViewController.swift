@@ -47,7 +47,7 @@ extension MainViewController: NaverThirdPartyLoginConnectionDelegate{
     // ---- 3 : 접근 토큰을 성공적으로 받아왔을 때 호출되는 메소드
     // 발급 받은 토큰의 유효 기간은 1시간으로 isValidAccessTokenExpireTimeNow() 메소드를 통해 현재 갖고 있는 접근 토큰의 유효 기간이 만료되었는지를 판단할 수 있습니다.
     func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
-        print("Success oauth20ConnectionDidFinishRequestACTokenWithAuthCode")
+        print("Success DidFinishRequestACTokenWith AuthCode")
         getNaverEmailFromURL()
         /////처음가입시 사용되는 메소드 -> 여행타입뷰로/////
 
@@ -55,7 +55,7 @@ extension MainViewController: NaverThirdPartyLoginConnectionDelegate{
     
     // ---- 4: 갱신 토큰을 성공적으로 받아왔을 때 호출되는 메소드
     func oauth20ConnectionDidFinishRequestACTokenWithRefreshToken() {
-        print("Success oauth20ConnectionDidFinishRequestACTokenWithRefreshToken")
+        print("Success DidFinishRequestACTokenWith RefreshToken")
         getNaverEmailFromURL()
         ////// 로그인 후 1시간동안 유효하기 때문에 ->바로 메인뷰/////
         
