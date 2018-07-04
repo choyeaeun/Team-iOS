@@ -182,8 +182,8 @@
 			children = (
 				503F542520EA088100F85074 /* HomeViewController.swift */,
 				5051E97520EBD48700CFFB5C /* HomeTableViewCell.swift */,
-				5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */,
 				5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */,
+				5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";

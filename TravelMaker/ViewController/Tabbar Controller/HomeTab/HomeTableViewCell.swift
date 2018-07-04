@@ -27,6 +27,7 @@ class HomeTableViewCell: UITableViewCell {
 }
 
 extension HomeTableViewCell{
+    
     func setCollectionViewDataSourceDelegate <D: UICollectionViewDelegate & UICollectionViewDataSource> (_ dataSourceDelegate: D, forRow row:Int){
         collectionView.delegate = dataSourceDelegate
         collectionView.dataSource = dataSourceDelegate
