@@ -54,8 +54,7 @@ class HomeDetailViewController: UIViewController, UITableViewDataSource, UITable
 
         
     }
-    
-    s
+
      //신청서 더보기 버튼 클릭 -> 화면전환
     @IBAction func applyMorePressed(_ sender: Any) {
         
