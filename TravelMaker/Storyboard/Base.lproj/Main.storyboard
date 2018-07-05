@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="78f-2s-sxF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SKz-YI-hcE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FGY-ey-5fk" secondAttribute="height" multiplier="218:47" id="3nM-9M-EtR"/>
                                 </constraints>
-                                <state key="normal" image="naver_img"/>
+                                <state key="normal" image="login_btn_1"/>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nd-3k-Lwy"/>
                                 </connections>
@@ -43,7 +43,7 @@
                                     <constraint firstAttribute="width" secondItem="kxH-Am-Fec" secondAttribute="height" multiplier="99:160" id="OSH-4f-ER4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel_maker_main" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-ON-y6S">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel_maker_login" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-ON-y6S">
                                 <rect key="frame" x="70" y="368.5" width="232" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Zwa-ON-y6S" secondAttribute="height" multiplier="232:25" id="dEn-KW-V3R"/>
@@ -116,7 +116,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fut-Fx-jnT" secondAttribute="height" multiplier="147:29" id="CaP-u7-ghl"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="login_btn"/>
+                                <state key="normal" title="Button" image="login_btn_2"/>
                                 <connections>
                                     <action selector="pressedJoinBtn:" destination="78f-2s-sxF" eventType="touchUpInside" id="7PA-hD-cia"/>
                                 </connections>
@@ -231,12 +231,171 @@
                     <view key="view" contentMode="scaleToFill" id="TLA-5O-Vav">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="관심있는 여행지" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-OB-e3f">
+                                <rect key="frame" x="16" y="83" width="110" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="2fl-GE-Pzy"/>
+                                    <constraint firstAttribute="height" constant="24" id="wcd-mm-RxP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.6588235294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qZr-UE-rAB">
+                                <rect key="frame" x="0.0" y="107" width="375" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1Kt-gb-CEE">
+                                    <size key="itemSize" width="125" height="148.83000000000001"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavoriteCollectionViewCell" id="mW3-WW-fxS" customClass="FavoriteCollectionViewCell" customModule="TravelMaker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="148.83000000000001"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="148.83000000000001"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bqG-cM-W3P">
+                                                    <rect key="frame" x="14" y="26" width="97" height="97"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="97" id="ImG-yw-Y2y"/>
+                                                        <constraint firstAttribute="width" constant="97" id="nai-nc-f8O"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="bqG-cM-W3P" firstAttribute="top" secondItem="mW3-WW-fxS" secondAttribute="top" constant="26" id="RiE-Q6-Icc"/>
+                                            <constraint firstItem="bqG-cM-W3P" firstAttribute="leading" secondItem="mW3-WW-fxS" secondAttribute="leading" constant="14" id="nym-Kn-CIM"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="favoriteCountryImage" destination="bqG-cM-W3P" id="E6Z-KR-kob"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oyg-eq-FmU">
+                                <rect key="frame" x="0.0" y="256" width="375" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xdi-nI-eXR">
+                                <rect key="frame" x="0.0" y="304" width="375" height="314"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="U5F-vn-FEC"/>
+                                    <constraint firstAttribute="width" constant="375" id="xM9-Gr-1hX"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="107" id="01A-t4-5Z9" customClass="FavoriteTableViewCell" customModule="TravelMaker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="01A-t4-5Z9" id="HGS-L4-dZh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vCN-sX-NPE">
+                                                    <rect key="frame" x="24.5" y="36" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="XIy-cm-F8l"/>
+                                                        <constraint firstAttribute="width" constant="35" id="pqj-mY-y5S"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB9-5O-emh">
+                                                    <rect key="frame" x="96" y="11" width="75" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="VwE-ys-6rX"/>
+                                                        <constraint firstAttribute="height" constant="11" id="mS5-EX-YX8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="11"/>
+                                                    <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행타입" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1m-kr-cOU">
+                                                    <rect key="frame" x="96" y="35" width="68" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="1gx-Me-CIu"/>
+                                                        <constraint firstAttribute="width" constant="68" id="QRw-zz-QO2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="11"/>
+                                                    <color key="textColor" red="0.066666666666666666" green="0.81960784313725488" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전문지역" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6B-oQ-hTO">
+                                                    <rect key="frame" x="96" y="59" width="68" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="DAw-Oc-XLb"/>
+                                                        <constraint firstAttribute="width" constant="68" id="lCp-k5-E1E"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="11"/>
+                                                    <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="평점" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Om-Jw-pT1">
+                                                    <rect key="frame" x="96" y="84" width="62" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="410-EC-l2i"/>
+                                                        <constraint firstAttribute="width" constant="62" id="iAi-Z5-Glf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="11"/>
+                                                    <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="x6B-oQ-hTO" firstAttribute="top" secondItem="R1m-kr-cOU" secondAttribute="bottom" constant="13" id="7hu-1X-L69"/>
+                                                <constraint firstItem="xB9-5O-emh" firstAttribute="leading" secondItem="HGS-L4-dZh" secondAttribute="leading" constant="96" id="8aW-pO-Meu"/>
+                                                <constraint firstItem="7Om-Jw-pT1" firstAttribute="top" secondItem="x6B-oQ-hTO" secondAttribute="bottom" constant="14" id="8sa-1g-Ddg"/>
+                                                <constraint firstItem="vCN-sX-NPE" firstAttribute="centerY" secondItem="HGS-L4-dZh" secondAttribute="centerY" id="DzN-iG-BMG"/>
+                                                <constraint firstAttribute="bottom" secondItem="vCN-sX-NPE" secondAttribute="bottom" constant="35.5" id="OZo-YF-P9T"/>
+                                                <constraint firstItem="x6B-oQ-hTO" firstAttribute="leading" secondItem="vCN-sX-NPE" secondAttribute="trailing" constant="36.5" id="V6H-5X-l3P"/>
+                                                <constraint firstItem="xB9-5O-emh" firstAttribute="top" secondItem="HGS-L4-dZh" secondAttribute="top" constant="11" id="dmF-Ch-flM"/>
+                                                <constraint firstItem="7Om-Jw-pT1" firstAttribute="leading" secondItem="HGS-L4-dZh" secondAttribute="leading" constant="96" id="hi8-jf-7me"/>
+                                                <constraint firstItem="R1m-kr-cOU" firstAttribute="leading" secondItem="vCN-sX-NPE" secondAttribute="trailing" constant="36.5" id="qs4-2z-W8b"/>
+                                                <constraint firstItem="vCN-sX-NPE" firstAttribute="top" secondItem="HGS-L4-dZh" secondAttribute="top" constant="36" id="rCc-nK-dtd"/>
+                                                <constraint firstItem="R1m-kr-cOU" firstAttribute="top" secondItem="xB9-5O-emh" secondAttribute="bottom" constant="13" id="ykF-fG-Jlh"/>
+                                                <constraint firstItem="vCN-sX-NPE" firstAttribute="leading" secondItem="HGS-L4-dZh" secondAttribute="leading" constant="24.5" id="yra-5J-5ZX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="x6B-oQ-hTO" id="QZ6-Hx-ctF"/>
+                                            <outlet property="idLabel" destination="xB9-5O-emh" id="jF6-Cc-hvI"/>
+                                            <outlet property="profileImage" destination="vCN-sX-NPE" id="g9u-YM-Kvv"/>
+                                            <outlet property="typeLabel" destination="R1m-kr-cOU" id="D6Y-Va-1hv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="관심있는 전문가" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASd-Yu-L0m">
+                                <rect key="frame" x="16" y="289" width="110" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans Korean" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.6588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xdi-nI-eXR" firstAttribute="trailing" secondItem="BDF-Ay-5JN" secondAttribute="trailing" id="Bas-7b-AMq"/>
+                            <constraint firstItem="xdi-nI-eXR" firstAttribute="bottom" secondItem="BDF-Ay-5JN" secondAttribute="bottom" id="EWp-6D-azk"/>
+                            <constraint firstItem="iiP-OB-e3f" firstAttribute="leading" secondItem="BDF-Ay-5JN" secondAttribute="leading" constant="16" id="Gsi-hh-90t"/>
+                            <constraint firstItem="xdi-nI-eXR" firstAttribute="leading" secondItem="BDF-Ay-5JN" secondAttribute="leading" id="RXv-uw-JUq"/>
+                            <constraint firstItem="iiP-OB-e3f" firstAttribute="top" secondItem="BDF-Ay-5JN" secondAttribute="top" constant="19" id="gTd-0S-a2N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BDF-Ay-5JN"/>
                     </view>
                     <navigationItem key="navigationItem" id="dwU-fG-jZl">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Snc-Pk-PXT"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="favoriteCollectionView" destination="qZr-UE-rAB" id="qNx-ah-jyz"/>
+                        <outlet property="favoriteTableView" destination="xdi-nI-eXR" id="UUO-Y2-6b1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rat-Fm-Tlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,7 +478,7 @@
         <scene sceneID="zTb-qj-VCk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nFc-RE-oHd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="저장" id="ui9-hR-4i3"/>
+                    <tabBarItem key="tabBarItem" title="저장" image="heart_icon" id="ui9-hR-4i3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YoT-Kl-nRr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -338,7 +497,7 @@
         <scene sceneID="RcQ-RJ-DT8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h4d-RB-f5V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="받은플랜함" id="Z1d-ry-t8u"/>
+                    <tabBarItem key="tabBarItem" title="받은플랜함" image="get_icon" id="Z1d-ry-t8u"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="En6-8x-Nua">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -357,7 +516,7 @@
         <scene sceneID="lnF-p8-YtE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5u6-KK-gc2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="보낸플랜함" id="j0f-9W-w4x"/>
+                    <tabBarItem key="tabBarItem" title="보낸플랜함" image="send_icon" id="j0f-9W-w4x"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yxi-dv-Kc6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -376,7 +535,7 @@
         <scene sceneID="crs-de-yTy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBG-e8-gR0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="마이페이지" id="qfE-33-2wO"/>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="mypg_icon" id="qfE-33-2wO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5g6-Bf-QZK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -390,6 +549,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBb-Wn-IJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2942" y="3178"/>
+        </scene>
+        <!--Expert Detail View Controller-->
+        <scene sceneID="ajS-oE-wXS">
+            <objects>
+                <viewController storyboardIdentifier="ExpertDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="45w-kf-DgN" customClass="ExpertDetailViewController" customModule="TravelMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Lt-4n-9qS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-1P-dMD">
+                                <rect key="frame" x="67" y="212" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전문가 상세 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv4-MG-YZQ">
+                                        <rect key="frame" x="57" y="54" width="127" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.29411764709999999" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JZM-z2-taa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rhE-oE-D9h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfb-D7-NAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2942" y="-1529"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="bhU-wr-Tto">
@@ -440,14 +631,35 @@
             </objects>
             <point key="canvasLocation" x="1894" y="34"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QDq-67-kop">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bTC-Av-hU4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B7G-Uh-1EN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="45w-kf-DgN" kind="relationship" relationship="rootViewController" id="kLl-z7-OE9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQZ-WQ-riC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="-1528"/>
+        </scene>
     </scenes>
     <resources>
         <image name="blue_backgroung" width="375" height="667"/>
-        <image name="login_btn" width="312" height="58"/>
+        <image name="get_icon" width="21" height="21"/>
+        <image name="heart_icon" width="22" height="19"/>
+        <image name="login_btn_1" width="218" height="47"/>
+        <image name="login_btn_2" width="312" height="58"/>
         <image name="logo_big" width="106" height="159"/>
         <image name="logo_small" width="37" height="55"/>
-        <image name="naver_img" width="218" height="47"/>
+        <image name="mypg_icon" width="24" height="24"/>
+        <image name="send_icon" width="27" height="19"/>
         <image name="travel_maker_login" width="249" height="29"/>
-        <image name="travel_maker_main" width="236" height="36"/>
     </resources>
 </document>

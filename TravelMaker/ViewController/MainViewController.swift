@@ -38,14 +38,17 @@ class MainViewController: UIViewController {
 extension MainViewController: NaverThirdPartyLoginConnectionDelegate{
     
     
-    // ---- 2: 네이버 앱이 설치되어 있지 않다면 사파리로 인증
+    // ---- 2: 네이버 앱이 없을 경우 사파리 인증
     func oauth20ConnectionDidOpenInAppBrowser(forOAuth request: URLRequest!) {
         let naverSignInViewController = NLoginThirdPartyOAuth20InAppBrowserViewController(request: request)!
         present(naverSignInViewController, animated: true, completion: nil)
     }
     
+    
+    // 발급 받은 토큰의 유효 기간은 1시간으로 isValidAccessTokenExpireTimeNow() 메소드를 통해
+    //현재 갖고 있는 접근 토큰의 유효 기간이 만료되었는지를 판단할 수 있습니다.
     // ---- 3 : 접근 토큰을 성공적으로 받아왔을 때 호출되는 메소드
-    // 발급 받은 토큰의 유효 기간은 1시간으로 isValidAccessTokenExpireTimeNow() 메소드를 통해 현재 갖고 있는 접근 토큰의 유효 기간이 만료되었는지를 판단할 수 있습니다.
+   
     func oauth20ConnectionDidFinishRequestACTokenWithAuthCode() {
         print("Success DidFinishRequestACTokenWith AuthCode")
         getNaverEmailFromURL()
@@ -87,8 +90,7 @@ extension MainViewController: NaverThirdPartyLoginConnectionDelegate{
         Alamofire.request("https://openapi.naver.com/v1/nid/me", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization" : authorization]).responseJSON { (response) in
             
             guard let result = response.result.value as? [String: Any] else {return}
-            guard let object = result["response"] as? [String: Any] else {return}
-            
+            //guard let object = result["response"] as? [String: Any] else {return}
             
             //guard let birthday = object["birthday"] as? String else {return} // "11-25"
             //guard let name = object["name"] as? String else {return} // "\Uc774\Ucda9\Uc2e0"

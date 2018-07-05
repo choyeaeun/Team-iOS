@@ -17,7 +17,18 @@ extension UIViewController {
     func gino(_ value: Int?) -> Int { //Int 옵셔널 벗기기
         return value ?? 0
     }
+
 }
+
+
+//네비게이션 컨트롤러바에 이미지를 삽입하는 함수
+extension UIViewController {
+    func makeNavImg(){
+        let imgTitle = #imageLiteral(resourceName: "travel_maker_main")
+        navigationItem.titleView = UIImageView(image: imgTitle)
+    }
+}
+
 
 extension NSObject {
     static var reuseIdentifier: String { //스토리보드 idetifier

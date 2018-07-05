@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503F17A920ECE69C005FBA10 /* ExpertDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17A820ECE69C005FBA10 /* ExpertDetailViewController.swift */; };
+		503F17AD20ED20A8005FBA10 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17AC20ED20A8005FBA10 /* HomeDetailViewController.swift */; };
+		503F17AF20ED20FE005FBA10 /* HomeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17AE20ED20FE005FBA10 /* HomeDetailTableViewCell.swift */; };
+		503F17B220ED2276005FBA10 /* MoreExpertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17B120ED2276005FBA10 /* MoreExpertViewController.swift */; };
+		503F17B420ED22A2005FBA10 /* MoreExpertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17B320ED22A2005FBA10 /* MoreExpertTableViewCell.swift */; };
+		503F17B820ED22E5005FBA10 /* MoreApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17B720ED22E5005FBA10 /* MoreApplyViewController.swift */; };
+		503F17BA20ED230A005FBA10 /* MoreApplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17B920ED230A005FBA10 /* MoreApplyTableViewCell.swift */; };
 		503F541B20E9D50D00F85074 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F541A20E9D50D00F85074 /* MainViewController.swift */; };
 		503F541D20E9FF0600F85074 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F541C20E9FF0600F85074 /* ToggleButton.swift */; };
 		503F541F20E9FFD300F85074 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F541E20E9FFD300F85074 /* JoinViewController.swift */; };
@@ -17,12 +24,14 @@
 		503F542C20EA0AC500F85074 /* SendPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542B20EA0AC500F85074 /* SendPlanViewController.swift */; };
 		503F542E20EA0B0700F85074 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F542D20EA0B0700F85074 /* MyPageViewController.swift */; };
 		503F543120EA151400F85074 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F543020EA151400F85074 /* ExploreViewController.swift */; };
+		50467FB420EDC0F800943BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50467FB320EDC0F800943BB8 /* Assets.xcassets */; };
 		5051E97620EBD48700CFFB5C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E97520EBD48700CFFB5C /* HomeTableViewCell.swift */; };
 		5051E97920EBD52600CFFB5C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */; };
 		5051E97B20EBD71100CFFB5C /* HomeTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */; };
+		5051E9A220EC923300CFFB5C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E9A120EC923300CFFB5C /* FavoriteTableViewCell.swift */; };
+		5051E9A420EC924B00CFFB5C /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051E9A320EC924B00CFFB5C /* FavoriteCollectionViewCell.swift */; };
 		505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505E418D20E8636600D769C9 /* AppDelegate.swift */; };
 		505E419320E8636600D769C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E419120E8636600D769C9 /* Main.storyboard */; };
-		505E419520E8636700D769C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505E419420E8636700D769C9 /* Assets.xcassets */; };
 		505E419820E8636700D769C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505E419620E8636700D769C9 /* LaunchScreen.storyboard */; };
 		50601F5020EA8982008C95DA /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */; };
 		50601F5120EA8982008C95DA /* NotoSansKR-Thin-Windows.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50601F4E20EA8980008C95DA /* NotoSansKR-Thin-Windows.otf */; };
@@ -35,6 +44,13 @@
 /* Begin PBXFileReference section */
 		1BDAEB0AF36657CC7A79C3A7 /* Pods-TravelMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaker/Pods-TravelMaker.release.xcconfig"; sourceTree = "<group>"; };
 		2600F68A9D0110ABCF8A06B2 /* Pods-TravelMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaker/Pods-TravelMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		503F17A820ECE69C005FBA10 /* ExpertDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertDetailViewController.swift; sourceTree = "<group>"; };
+		503F17AC20ED20A8005FBA10 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		503F17AE20ED20FE005FBA10 /* HomeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailTableViewCell.swift; sourceTree = "<group>"; };
+		503F17B120ED2276005FBA10 /* MoreExpertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreExpertViewController.swift; sourceTree = "<group>"; };
+		503F17B320ED22A2005FBA10 /* MoreExpertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreExpertTableViewCell.swift; sourceTree = "<group>"; };
+		503F17B720ED22E5005FBA10 /* MoreApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreApplyViewController.swift; sourceTree = "<group>"; };
+		503F17B920ED230A005FBA10 /* MoreApplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreApplyTableViewCell.swift; sourceTree = "<group>"; };
 		503F541A20E9D50D00F85074 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		503F541C20E9FF0600F85074 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToggleButton.swift; path = UI/ToggleButton.swift; sourceTree = SOURCE_ROOT; };
 		503F541E20E9FFD300F85074 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
@@ -45,13 +61,15 @@
 		503F542B20EA0AC500F85074 /* SendPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPlanViewController.swift; sourceTree = "<group>"; };
 		503F542D20EA0B0700F85074 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		503F543020EA151400F85074 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		50467FB320EDC0F800943BB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5051E97520EBD48700CFFB5C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderCell.swift; sourceTree = "<group>"; };
+		5051E9A120EC923300CFFB5C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		5051E9A320EC924B00CFFB5C /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		505E418A20E8636600D769C9 /* TravelMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505E418D20E8636600D769C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505E419220E8636600D769C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		505E419420E8636700D769C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505E419720E8636700D769C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505E419920E8636700D769C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
@@ -96,7 +114,7 @@
 			children = (
 				503F541A20E9D50D00F85074 /* MainViewController.swift */,
 				503F541E20E9FFD300F85074 /* JoinViewController.swift */,
-				503F543020EA151400F85074 /* ExploreViewController.swift */,
+				503F17A820ECE69C005FBA10 /* ExpertDetailViewController.swift */,
 				503F542F20EA127600F85074 /* Tabbar Controller */,
 			);
 			path = ViewController;
@@ -154,30 +172,7 @@
 			path = Function;
 			sourceTree = "<group>";
 		};
-		503F542F20EA127600F85074 /* Tabbar Controller */ = {
-			isa = PBXGroup;
-			children = (
-				5051E97720EBD4CE00CFFB5C /* HomeTab */,
-				503F542720EA088C00F85074 /* FavoriteViewController.swift */,
-				503F542920EA0A4000F85074 /* ReceivePlanViewController.swift */,
-				503F542B20EA0AC500F85074 /* SendPlanViewController.swift */,
-				503F542D20EA0B0700F85074 /* MyPageViewController.swift */,
-			);
-			path = "Tabbar Controller";
-			sourceTree = "<group>";
-		};
-		503F543220EA4E4000F85074 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				50601F4F20EA8981008C95DA /* NotoSansKR-Medium.otf */,
-				50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */,
-				50601F4E20EA8980008C95DA /* NotoSansKR-Thin-Windows.otf */,
-				505E419420E8636700D769C9 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		5051E97720EBD4CE00CFFB5C /* HomeTab */ = {
+		503F17AA20ED2066005FBA10 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				503F542520EA088100F85074 /* HomeViewController.swift */,
@@ -185,7 +180,95 @@
 				5051E97A20EBD71000CFFB5C /* HomeTableViewHeaderCell.swift */,
 				5051E97820EBD52600CFFB5C /* HomeCollectionViewCell.swift */,
 			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		503F17AB20ED207C005FBA10 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				503F17AC20ED20A8005FBA10 /* HomeDetailViewController.swift */,
+				503F17AE20ED20FE005FBA10 /* HomeDetailTableViewCell.swift */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		503F17B020ED21FD005FBA10 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				503F17B120ED2276005FBA10 /* MoreExpertViewController.swift */,
+				503F17B320ED22A2005FBA10 /* MoreExpertTableViewCell.swift */,
+				503F17B720ED22E5005FBA10 /* MoreApplyViewController.swift */,
+				503F17B920ED230A005FBA10 /* MoreApplyTableViewCell.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		503F17BB20ED233E005FBA10 /* ReceiveTab */ = {
+			isa = PBXGroup;
+			children = (
+				503F542920EA0A4000F85074 /* ReceivePlanViewController.swift */,
+			);
+			path = ReceiveTab;
+			sourceTree = "<group>";
+		};
+		503F17BC20ED235A005FBA10 /* SendTab */ = {
+			isa = PBXGroup;
+			children = (
+				503F542B20EA0AC500F85074 /* SendPlanViewController.swift */,
+			);
+			path = SendTab;
+			sourceTree = "<group>";
+		};
+		503F17BD20ED2375005FBA10 /* MyPageTab */ = {
+			isa = PBXGroup;
+			children = (
+				503F542D20EA0B0700F85074 /* MyPageViewController.swift */,
+			);
+			path = MyPageTab;
+			sourceTree = "<group>";
+		};
+		503F542F20EA127600F85074 /* Tabbar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5051E97720EBD4CE00CFFB5C /* HomeTab */,
+				5051E9A020EC8F5600CFFB5C /* FavoriteTab */,
+				503F17BB20ED233E005FBA10 /* ReceiveTab */,
+				503F17BC20ED235A005FBA10 /* SendTab */,
+				503F17BD20ED2375005FBA10 /* MyPageTab */,
+			);
+			path = "Tabbar Controller";
+			sourceTree = "<group>";
+		};
+		503F543220EA4E4000F85074 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50467FB320EDC0F800943BB8 /* Assets.xcassets */,
+				50601F4F20EA8981008C95DA /* NotoSansKR-Medium.otf */,
+				50601F4D20EA8980008C95DA /* NotoSansKR-Regular.otf */,
+				50601F4E20EA8980008C95DA /* NotoSansKR-Thin-Windows.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5051E97720EBD4CE00CFFB5C /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				503F543020EA151400F85074 /* ExploreViewController.swift */,
+				503F17AA20ED2066005FBA10 /* Home */,
+				503F17AB20ED207C005FBA10 /* HomeDetail */,
+				503F17B020ED21FD005FBA10 /* More */,
+			);
 			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		5051E9A020EC8F5600CFFB5C /* FavoriteTab */ = {
+			isa = PBXGroup;
+			children = (
+				503F542720EA088C00F85074 /* FavoriteViewController.swift */,
+				5051E9A120EC923300CFFB5C /* FavoriteTableViewCell.swift */,
+				5051E9A320EC924B00CFFB5C /* FavoriteCollectionViewCell.swift */,
+			);
+			path = FavoriteTab;
 			sourceTree = "<group>";
 		};
 		505E418120E8636600D769C9 = {
@@ -280,10 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				505E419820E8636700D769C9 /* LaunchScreen.storyboard in Resources */,
-				505E419520E8636700D769C9 /* Assets.xcassets in Resources */,
 				50601F5220EA8982008C95DA /* NotoSansKR-Medium.otf in Resources */,
 				50601F5120EA8982008C95DA /* NotoSansKR-Thin-Windows.otf in Resources */,
 				50601F5020EA8982008C95DA /* NotoSansKR-Regular.otf in Resources */,
+				50467FB420EDC0F800943BB8 /* Assets.xcassets in Resources */,
 				505E419320E8636600D769C9 /* Main.storyboard in Resources */,
 				503F542420EA07E400F85074 /* Sub.storyboard in Resources */,
 			);
@@ -337,21 +420,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503F17B420ED22A2005FBA10 /* MoreExpertTableViewCell.swift in Sources */,
+				503F17A920ECE69C005FBA10 /* ExpertDetailViewController.swift in Sources */,
 				503F542A20EA0A4000F85074 /* ReceivePlanViewController.swift in Sources */,
+				503F17BA20ED230A005FBA10 /* MoreApplyTableViewCell.swift in Sources */,
 				503F542E20EA0B0700F85074 /* MyPageViewController.swift in Sources */,
+				503F17AF20ED20FE005FBA10 /* HomeDetailTableViewCell.swift in Sources */,
 				5051E97620EBD48700CFFB5C /* HomeTableViewCell.swift in Sources */,
 				503F543120EA151400F85074 /* ExploreViewController.swift in Sources */,
 				503F542620EA088100F85074 /* HomeViewController.swift in Sources */,
 				503F541B20E9D50D00F85074 /* MainViewController.swift in Sources */,
 				503F542C20EA0AC500F85074 /* SendPlanViewController.swift in Sources */,
+				5051E9A420EC924B00CFFB5C /* FavoriteCollectionViewCell.swift in Sources */,
 				5051E97920EBD52600CFFB5C /* HomeCollectionViewCell.swift in Sources */,
 				5051E97B20EBD71100CFFB5C /* HomeTableViewHeaderCell.swift in Sources */,
+				5051E9A220EC923300CFFB5C /* FavoriteTableViewCell.swift in Sources */,
 				503F541D20E9FF0600F85074 /* ToggleButton.swift in Sources */,
+				503F17AD20ED20A8005FBA10 /* HomeDetailViewController.swift in Sources */,
 				50E80A8020EB5C2B00B427A3 /* ExtensionControl.swift in Sources */,
 				50E80A8220EB5FD600B427A3 /* APIService.swift in Sources */,
+				503F17B220ED2276005FBA10 /* MoreExpertViewController.swift in Sources */,
 				503F541F20E9FFD300F85074 /* JoinViewController.swift in Sources */,
 				503F542820EA088C00F85074 /* FavoriteViewController.swift in Sources */,
 				505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */,
+				503F17B820ED22E5005FBA10 /* MoreApplyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C99ST777A5;
+				DEVELOPMENT_TEAM = 8E3WW2RPPH;
 				INFOPLIST_FILE = TravelMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,7 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C99ST777A5;
+				DEVELOPMENT_TEAM = 8E3WW2RPPH;
 				INFOPLIST_FILE = TravelMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
