@@ -65,3 +65,15 @@ extension UIColor {
         return nil
     }
 }
+
+
+
+extension FavoriteVC{
+    
+    func setCollectionViewDataSourceDelegate <D: UICollectionViewDelegate & UICollectionViewDataSource> (_ dataSourceDelegate: D, forRow row:Int){
+        favoriteCollectionView.delegate = dataSourceDelegate
+        favoriteCollectionView.dataSource = dataSourceDelegate
+        
+        favoriteCollectionView.reloadData()
+    }
+}
