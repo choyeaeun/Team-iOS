@@ -10,6 +10,7 @@ import UIKit
 
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    
     var sectionNum:Int = -1
     var countryCount:Int = 0
     
@@ -17,12 +18,19 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UICo
     
     var asiaImageArray = [#imageLiteral(resourceName: "asia_img1"), #imageLiteral(resourceName: "asia_img2"), #imageLiteral(resourceName: "asia_img3")]
     var europeImageArray = [#imageLiteral(resourceName: "europe_img_1"), #imageLiteral(resourceName: "euro_img_2"),#imageLiteral(resourceName: "euro_img_3")]
-    var northImageArray = [#imageLiteral(resourceName: "null_circle"),#imageLiteral(resourceName: "null_circle"),#imageLiteral(resourceName: "null_circle")]
+    var northImageArray = [#imageLiteral(resourceName: "usa"),#imageLiteral(resourceName: "canada"),#imageLiteral(resourceName: "mexico")]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+    }
+    
+    @IBAction func countryBtnPressed(_ sender: Any) {
+        guard let HomeDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeDetailVC") as? HomeDetailVC else
+        { return }
+        
+        self.navigationController?.pushViewController(HomeDetailVC, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,11 +63,11 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UICo
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTVHCell") as! HomeTVHCell
         
         if section == 0 {
-            cell.continentLabel.text = "  아시아  "
+            cell.continentLabel.text = "아시아"
         }else if section == 1 {
-            cell.continentLabel.text = "  유럽  "
+            cell.continentLabel.text = "유럽"
         }else {
-            cell.continentLabel.text = "  북아메리카  "
+            cell.continentLabel.text = "북아메리카"
         }
         
         return cell

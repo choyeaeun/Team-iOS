@@ -24,8 +24,8 @@ class PopUpFilterVC
     
     
     @IBAction func pressedClose(_ sender: Any) {
-        self.view.removeFromSuperview()
         self.removeAnimate()
+        self.view.removeFromSuperview()
     }
     
     

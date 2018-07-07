@@ -22,6 +22,7 @@ class ShowApplyVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        if section == 0 {
 //            return 1

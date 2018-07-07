@@ -16,11 +16,11 @@ class HomeTVHCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        continentLabel.layer.borderWidth = 0.7
-        continentLabel.layer.borderColor = UIColor.gray.cgColor
-        continentLabel.layer.cornerRadius = continentLabel.frame.size.width/4
-        continentLabel.clipsToBounds = true
+//        
+//        continentLabel.layer.borderWidth = 0.7
+//        continentLabel.layer.borderColor = UIColor.gray.cgColor
+//        continentLabel.layer.cornerRadius = continentLabel.frame.size.width/4
+//        continentLabel.clipsToBounds = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

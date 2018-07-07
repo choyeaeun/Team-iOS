@@ -54,7 +54,7 @@ class FavoriteVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     override func viewWillAppear(_ animated: Bool) {
         makeNavImg()
-  
+        self.tabBarController?.tabBar.isHidden = false
     }
 
     
