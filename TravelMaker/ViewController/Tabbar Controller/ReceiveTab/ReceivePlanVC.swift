@@ -8,15 +8,41 @@
 
 import UIKit
 
-class ReceivePlanVC: UIViewController {
-
+class ReceivePlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var receivePlanTV: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.receivePlanTV.delegate = self;
+        self.receivePlanTV.dataSource = self;
     }
     
     override func viewWillAppear(_ animated: Bool) {
         makeNavImg()
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if section == 0 {
+            return 1
+        }else {
+            return 5
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+        let cell = receivePlanTV.dequeueReusableCell(withIdentifier: "ReceivePlanTVCell1") as! ReceivePlanTVCell1
+            return cell
+        }else {
+            let cell = receivePlanTV.dequeueReusableCell(withIdentifier: "ReceivePlanTVCell2") as! ReceivePlanTVCell2
+            return cell
+        }
+    
 
+}
 }

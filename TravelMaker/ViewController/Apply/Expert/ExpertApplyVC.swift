@@ -19,7 +19,9 @@ class ExpertApplyVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         self.expertApplyTableView.dataSource = self;
         self.expertApplyTableView.delegate = self;
     }
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0 || section == 2){
             return 1

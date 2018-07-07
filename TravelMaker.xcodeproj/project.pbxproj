@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0935F420F05D9E00AFBB33 /* PlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0935F320F05D9E00AFBB33 /* PlaceVC.swift */; };
+		3A0935F620F05E1E00AFBB33 /* PlaceTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0935F520F05E1E00AFBB33 /* PlaceTVCell.swift */; };
+		3A0935F820F05E3700AFBB33 /* InfoTitleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0935F720F05E3700AFBB33 /* InfoTitleTVCell.swift */; };
+		3A0935FA20F05E4E00AFBB33 /* InfoMemoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0935F920F05E4E00AFBB33 /* InfoMemoTVCell.swift */; };
+		3A0935FC20F05E8000AFBB33 /* InfoPriceTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0935FB20F05E8000AFBB33 /* InfoPriceTVCell.swift */; };
+		3A0935FE20F05E8A00AFBB33 /* InfoRouteTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0935FD20F05E8A00AFBB33 /* InfoRouteTVCell.swift */; };
+		3A09360420F0913500AFBB33 /* DateListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09360320F0913500AFBB33 /* DateListVC.swift */; };
+		3A09360620F0914900AFBB33 /* DateListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A09360520F0914900AFBB33 /* DateListTVCell.swift */; };
+		3A4F8F9B20EF9CFD00B058B8 /* ReceivePlanTVCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F8F9A20EF9CFD00B058B8 /* ReceivePlanTVCell1.swift */; };
+		3A4F8F9D20EF9D0700B058B8 /* ReceivePlanTVCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F8F9C20EF9D0700B058B8 /* ReceivePlanTVCell2.swift */; };
+		3A4F8F9F20EFB05A00B058B8 /* SendPalnTVCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F8F9E20EFB05A00B058B8 /* SendPalnTVCell1.swift */; };
+		3A4F8FA120EFB06600B058B8 /* SendPalnTVCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4F8FA020EFB06600B058B8 /* SendPalnTVCell2.swift */; };
 		503F17AD20ED20A8005FBA10 /* HomeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17AC20ED20A8005FBA10 /* HomeDetailVC.swift */; };
 		503F17AF20ED20FE005FBA10 /* HomeDetailTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17AE20ED20FE005FBA10 /* HomeDetailTVCell.swift */; };
 		503F17B220ED2276005FBA10 /* MoreExpertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F17B120ED2276005FBA10 /* MoreExpertVC.swift */; };
@@ -58,6 +70,18 @@
 /* Begin PBXFileReference section */
 		1BDAEB0AF36657CC7A79C3A7 /* Pods-TravelMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaker/Pods-TravelMaker.release.xcconfig"; sourceTree = "<group>"; };
 		2600F68A9D0110ABCF8A06B2 /* Pods-TravelMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelMaker/Pods-TravelMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0935F320F05D9E00AFBB33 /* PlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceVC.swift; sourceTree = "<group>"; };
+		3A0935F520F05E1E00AFBB33 /* PlaceTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTVCell.swift; sourceTree = "<group>"; };
+		3A0935F720F05E3700AFBB33 /* InfoTitleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTitleTVCell.swift; sourceTree = "<group>"; };
+		3A0935F920F05E4E00AFBB33 /* InfoMemoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoMemoTVCell.swift; sourceTree = "<group>"; };
+		3A0935FB20F05E8000AFBB33 /* InfoPriceTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPriceTVCell.swift; sourceTree = "<group>"; };
+		3A0935FD20F05E8A00AFBB33 /* InfoRouteTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRouteTVCell.swift; sourceTree = "<group>"; };
+		3A09360320F0913500AFBB33 /* DateListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListVC.swift; sourceTree = "<group>"; };
+		3A09360520F0914900AFBB33 /* DateListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListTVCell.swift; sourceTree = "<group>"; };
+		3A4F8F9A20EF9CFD00B058B8 /* ReceivePlanTVCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivePlanTVCell1.swift; sourceTree = "<group>"; };
+		3A4F8F9C20EF9D0700B058B8 /* ReceivePlanTVCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivePlanTVCell2.swift; sourceTree = "<group>"; };
+		3A4F8F9E20EFB05A00B058B8 /* SendPalnTVCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPalnTVCell1.swift; sourceTree = "<group>"; };
+		3A4F8FA020EFB06600B058B8 /* SendPalnTVCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPalnTVCell2.swift; sourceTree = "<group>"; };
 		503F17AC20ED20A8005FBA10 /* HomeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVC.swift; sourceTree = "<group>"; };
 		503F17AE20ED20FE005FBA10 /* HomeDetailTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailTVCell.swift; sourceTree = "<group>"; };
 		503F17B120ED2276005FBA10 /* MoreExpertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreExpertVC.swift; sourceTree = "<group>"; };
@@ -137,9 +161,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3A0935F220F05D6000AFBB33 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				3A09360020F090F300AFBB33 /* DateList */,
+				3A0935FF20F090E100AFBB33 /* Place */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		3A0935FF20F090E100AFBB33 /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				3A0935F320F05D9E00AFBB33 /* PlaceVC.swift */,
+				3A0935F520F05E1E00AFBB33 /* PlaceTVCell.swift */,
+				3A0935F720F05E3700AFBB33 /* InfoTitleTVCell.swift */,
+				3A0935F920F05E4E00AFBB33 /* InfoMemoTVCell.swift */,
+				3A0935FB20F05E8000AFBB33 /* InfoPriceTVCell.swift */,
+				3A0935FD20F05E8A00AFBB33 /* InfoRouteTVCell.swift */,
+			);
+			path = Place;
+			sourceTree = "<group>";
+		};
+		3A09360020F090F300AFBB33 /* DateList */ = {
+			isa = PBXGroup;
+			children = (
+				3A09360320F0913500AFBB33 /* DateListVC.swift */,
+				3A09360520F0914900AFBB33 /* DateListTVCell.swift */,
+			);
+			path = DateList;
+			sourceTree = "<group>";
+		};
 		5007452220E8768D001394A7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3A0935F220F05D6000AFBB33 /* Plan */,
 				503F541A20E9D50D00F85074 /* MainVC.swift */,
 				503F541E20E9FFD300F85074 /* JoinVC.swift */,
 				50467FC420EF38AE00943BB8 /* ExpertDetailVC.swift */,
@@ -238,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				503F542920EA0A4000F85074 /* ReceivePlanVC.swift */,
+				3A4F8F9A20EF9CFD00B058B8 /* ReceivePlanTVCell1.swift */,
+				3A4F8F9C20EF9D0700B058B8 /* ReceivePlanTVCell2.swift */,
 			);
 			path = ReceiveTab;
 			sourceTree = "<group>";
@@ -246,6 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				503F542B20EA0AC500F85074 /* SendPlanVC.swift */,
+				3A4F8F9E20EFB05A00B058B8 /* SendPalnTVCell1.swift */,
+				3A4F8FA020EFB06600B058B8 /* SendPalnTVCell2.swift */,
 			);
 			path = SendTab;
 			sourceTree = "<group>";
@@ -513,10 +573,13 @@
 				503F17B420ED22A2005FBA10 /* MoreExpertTVCell.swift in Sources */,
 				503F542A20EA0A4000F85074 /* ReceivePlanVC.swift in Sources */,
 				50467FC520EF38AE00943BB8 /* ExpertDetailVC.swift in Sources */,
+				3A4F8FA120EFB06600B058B8 /* SendPalnTVCell2.swift in Sources */,
 				50467FD720EF600700943BB8 /* WriteApplyTVCell1.swift in Sources */,
+				3A0935FC20F05E8000AFBB33 /* InfoPriceTVCell.swift in Sources */,
 				50467FD220EF600700943BB8 /* ShowApplyTVCell1.swift in Sources */,
 				503F17BA20ED230A005FBA10 /* MoreApplyTVCell.swift in Sources */,
 				503F542E20EA0B0700F85074 /* MyPageVC.swift in Sources */,
+				3A0935F420F05D9E00AFBB33 /* PlaceVC.swift in Sources */,
 				503F17AF20ED20FE005FBA10 /* HomeDetailTVCell.swift in Sources */,
 				50467FB720EDF7BA00943BB8 /* CountryVO.swift in Sources */,
 				50467FD320EF600700943BB8 /* ShowApplyVC.swift in Sources */,
@@ -528,7 +591,9 @@
 				503F542620EA088100F85074 /* HomeVC.swift in Sources */,
 				503F541B20E9D50D00F85074 /* MainVC.swift in Sources */,
 				50467FD620EF600700943BB8 /* ExpertApplyTVCell3.swift in Sources */,
+				3A0935FE20F05E8A00AFBB33 /* InfoRouteTVCell.swift in Sources */,
 				503F542C20EA0AC500F85074 /* SendPlanVC.swift in Sources */,
+				3A0935FA20F05E4E00AFBB33 /* InfoMemoTVCell.swift in Sources */,
 				5051E9A420EC924B00CFFB5C /* FavoriteCVCell.swift in Sources */,
 				5051E97920EBD52600CFFB5C /* HomeCVCell.swift in Sources */,
 				50467FBE20EE4FCB00943BB8 /* enums.swift in Sources */,
@@ -539,15 +604,22 @@
 				50467FB920EE0B4300943BB8 /* PopUpFilterVC.swift in Sources */,
 				503F17AD20ED20A8005FBA10 /* HomeDetailVC.swift in Sources */,
 				50467FD920EF600700943BB8 /* ExpertApplyVC.swift in Sources */,
+				3A4F8F9D20EF9D0700B058B8 /* ReceivePlanTVCell2.swift in Sources */,
 				50467FBC20EE4FB600943BB8 /* HttpResponseCode.swift in Sources */,
 				50E80A8020EB5C2B00B427A3 /* ExtensionControl.swift in Sources */,
 				50E80A8220EB5FD600B427A3 /* APIService.swift in Sources */,
+				3A0935F820F05E3700AFBB33 /* InfoTitleTVCell.swift in Sources */,
+				3A0935F620F05E1E00AFBB33 /* PlaceTVCell.swift in Sources */,
 				503F17B220ED2276005FBA10 /* MoreExpertVC.swift in Sources */,
+				3A09360620F0914900AFBB33 /* DateListTVCell.swift in Sources */,
 				503F541F20E9FFD300F85074 /* JoinVC.swift in Sources */,
 				503F542820EA088C00F85074 /* FavoriteVC.swift in Sources */,
 				505E418E20E8636600D769C9 /* AppDelegate.swift in Sources */,
 				503F17B820ED22E5005FBA10 /* MoreApplyVC.swift in Sources */,
+				3A4F8F9B20EF9CFD00B058B8 /* ReceivePlanTVCell1.swift in Sources */,
 				50467FD420EF600700943BB8 /* WriteApplyTVCell2.swift in Sources */,
+				3A09360420F0913500AFBB33 /* DateListVC.swift in Sources */,
+				3A4F8F9F20EFB05A00B058B8 /* SendPalnTVCell1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,7 +765,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E3WW2RPPH;
+				DEVELOPMENT_TEAM = C99ST777A5;
 				INFOPLIST_FILE = TravelMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -712,7 +784,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8E3WW2RPPH;
+				DEVELOPMENT_TEAM = C99ST777A5;
 				INFOPLIST_FILE = TravelMaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
