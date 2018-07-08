@@ -33,7 +33,11 @@ class MoreApplyVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
 
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ApplyDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShowApplyVC") as! ShowApplyVC
+        
+        self.navigationController?.pushViewController(ApplyDetailVC, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20

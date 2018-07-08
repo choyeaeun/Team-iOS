@@ -8,7 +8,7 @@
 
 import UIKit
 import NaverThirdPartyLogin
-
+import GoogleMaps
 
 @UIApplicationMain
 
@@ -16,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        GMSServices.provideAPIKey("AIzaSyD0_Q-aImN51zpMgT8yZK1PFZn6yniHz_s")
         
         //네아로 로그인에 필요한 인스턴스
         let instance = NaverThirdPartyLoginConnection.getSharedInstance()

@@ -16,6 +16,7 @@ class WriteApplyTVCell1: UITableViewCell {
     @IBOutlet weak var houseTextField: UITextField!
     @IBOutlet weak var inDateTextField: UITextField!
     @IBOutlet weak var inCityTextField: UITextField!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

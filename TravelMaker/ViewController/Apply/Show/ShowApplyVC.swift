@@ -24,14 +24,13 @@ class ShowApplyVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if section == 0 {
-//            return 1
-//        }else {
-//            //댓글 숫자로 구현
-//            return 4
-//        }
+        if section == 0 {
+            return 1
+        }else {
+            //댓글 숫자로 구현
+            return 4
+        }
         
-        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

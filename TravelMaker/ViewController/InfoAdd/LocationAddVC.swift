@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class LocationAddVC: UIViewController {
+
+    @IBOutlet weak var googleMapsContainer: UIView!
+    
+    var mapView:GMSMapView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        self.mapView = GMSMapView(frame: googleMapsContainer.frame)
+        
+        self.view.addSubview(self.mapView)
+        
     }
     
     

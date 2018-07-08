@@ -19,6 +19,14 @@ class ExpertApplyVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         self.expertApplyTableView.dataSource = self;
         self.expertApplyTableView.delegate = self;
     }
+    
+    @IBAction func confirmBtnPressed(_ sender: Any) {
+        guard let confirmVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertDetailVC") as? ExpertDetailVC else
+        { return }
+        
+        self.navigationController?.pushViewController(confirmVC, animated: true)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }

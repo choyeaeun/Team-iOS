@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (4.6.0)
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
+    - GoogleMaps/Base
   - naveridlogin-sdk-ios (4.0.9)
 
 DEPENDENCIES:
   - Alamofire
+  - GoogleMaps
   - naveridlogin-sdk-ios
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - GoogleMaps
     - naveridlogin-sdk-ios
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   naveridlogin-sdk-ios: 16d901a8a3120f84432088e68dd8306e7030c3cb
 
-PODFILE CHECKSUM: 6fec7996c3b57a5ac68aac2566bc3aebd64b7718
+PODFILE CHECKSUM: e68d57f6d06aa040cc73b97a788edd19cfae97f3
 
 COCOAPODS: 1.5.0
